@@ -11,24 +11,26 @@
 <div>
     <form method="post">
         <label>Assignments:</label><br />
-        <input id="Assignments" name="Assignments" /><br />
+        <input id="Assignments" asp-for="Assignments" /><br />
 
         <label>Group Projects:</label><br />
-        <input id="GroupProject" name="GroupProject" /><br />
+        <input id="GroupProject" asp-for="GroupProjects" /><br />
 
         <label>Quizzes</label><br />
-        <input id="Quiz" name="Quizzes"/><br />
+        <input id="Quiz" asp-for="Quizzes"/><br />
 
         <label>Midterm Exam:</label><br />
-        <input id="Midterm" name="midterm"/><br />
+        <input id="Midterm" asp-for="MidtermExam"/><br />
 
         <label>Final Exam:</label><br />
-        <input id="Final" name="Final"/><br />
+        <input id="Final" asp-for="FinalExam"/><br />
 
         <label>INTEX:</label><br />
-        <input id="INTEX" name="INTEX"/><br />
+        <input id="INTEX" asp-for="INTEX"/><br />
         <br />
         <input id="btncalculate" type="submit" value="Calculate" />
+
+        <div asp-validation-summary="All"></div>
     </form>
 </div>
 <div id="output"></div>
