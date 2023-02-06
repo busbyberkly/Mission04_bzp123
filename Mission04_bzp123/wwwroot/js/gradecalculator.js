@@ -41,5 +41,6 @@ $("#btncalculate").click(function () {
     }
 
     //displays the letter grade in the div with the id of 'output' on the html page.
-    $('#output').append('Grade: ' + grade);
+    //$('#output').append('Grade: ' + grade);
+    alert('Grade: ' + grade)
 })

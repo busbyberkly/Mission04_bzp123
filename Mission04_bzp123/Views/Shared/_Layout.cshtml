@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+
+    <!--I made my own favicon using https://www.favicon.cc/-->
+    <link rel="icon" type="image/x-icon" href="~/images/favicon.ico" />
+
+    <!--I copied and pasted the bootstrap so it is only sort of working lol-->
+    <link href="~/css/BootstrapStyleSheet.css" rel="stylesheet" />
+    <link href="~/css/BusbyberklyStyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="gradecalculator">Grade Calculator</a>
+    </nav>
+    
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/js/gradecalculator.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+</body>
+</html>
