@@ -4,29 +4,31 @@
 @{
 }
 
+@model GradecalculatorModel;
+
 <!--my grade calculator-->
 <h2>Grade Calculator</h2>
 <div>
-    <form>
+    <form method="post">
         <label>Assignments:</label><br />
-        <input id="Assignments" /><br />
+        <input id="Assignments" name="Assignments" /><br />
 
         <label>Group Projects:</label><br />
-        <input id="GroupProject" /><br />
+        <input id="GroupProject" name="GroupProject" /><br />
 
         <label>Quizzes</label><br />
-        <input id="Quiz" /><br />
+        <input id="Quiz" name="Quizzes"/><br />
 
         <label>Midterm Exam:</label><br />
-        <input id="Midterm" /><br />
+        <input id="Midterm" name="midterm"/><br />
 
         <label>Final Exam:</label><br />
-        <input id="Final" /><br />
+        <input id="Final" name="Final"/><br />
 
         <label>INTEX:</label><br />
-        <input id="INTEX" /><br />
+        <input id="INTEX" name="INTEX"/><br />
         <br />
-        <input id="btncalculate" type="button" value="Calculate" />
+        <input id="btncalculate" type="submit" value="Calculate" />
     </form>
 </div>
 <div id="output"></div>
